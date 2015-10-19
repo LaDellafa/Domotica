@@ -1,5 +1,5 @@
 sudo git pull https://github.com/LaDellafa/Domotica.git
 
 sudo git add -A
-sudo git commit -m "u veranderingen"
+sudo git commit -m "uw veranderingen"
 sudo git push
