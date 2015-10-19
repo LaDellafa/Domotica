@@ -16,4 +16,6 @@ EXECUTABLES :=
 SUBDIRS := \
 src \
 emlib \
+CMSIS/efm32gg \
+BSP \
 

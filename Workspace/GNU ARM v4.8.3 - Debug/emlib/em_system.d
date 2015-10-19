@@ -1,4 +1,5 @@
-emlib/em_system.o: ../emlib/em_system.c \
+emlib/em_system.o: \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/src/em_system.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/em_device.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg990f1024.h \

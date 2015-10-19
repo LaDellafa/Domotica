@@ -1,4 +1,5 @@
-CMSIS/efm32gg/system_efm32gg.o: ../CMSIS/efm32gg/system_efm32gg.c \
+CMSIS/efm32gg/system_efm32gg.o: \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Source/system_efm32gg.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/em_device.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg990f1024.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm3.h \
