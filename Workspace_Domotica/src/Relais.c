@@ -12,25 +12,12 @@
  * any purpose, you must agree to the terms of that agreement.
  *
  ******************************************************************************/
-#include <stdint.h>
-#include <stdbool.h>
-#include "em_device.h"
 #include "em_gpio.h"
-#include "em_chip.h"
-#include "em_cmu.h"
-#include "em_emu.h"
-#include "bsp.h"
-#include "bsp_trace.h"
-
-#include <stdio.h>
-
 /**************************************************************************//**
  * @brief  Main function
  *****************************************************************************/
 void Relais_bediening(int status)
 {
-	//GPIO_PinModeSet(gpioPortC,0,gpioModePushPull,0);
-
 	for (int i = 0; i < 7; i++) {
 	        //Initialiseer een tijdelijke waarde
 			// die de huidige relais gaat aansturen.

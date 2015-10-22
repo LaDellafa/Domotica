@@ -66,7 +66,7 @@ src/Main.o: ../src/Main.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_trace.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_msc.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/EFM32GG_STK3700/config/traceconfig.h \
- ../src/Relais.h
+ ../src/Klok.h ../src/Relais.h
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/em_device.h:
 
@@ -201,5 +201,7 @@ src/Main.o: ../src/Main.c \
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_msc.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/EFM32GG_STK3700/config/traceconfig.h:
+
+../src/Klok.h:
 
 ../src/Relais.h:

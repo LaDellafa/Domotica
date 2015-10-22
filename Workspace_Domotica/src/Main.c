@@ -22,7 +22,7 @@
 #include "em_gpio.h"
 #include "bsp.h"
 #include "bsp_trace.h"
-
+#include "Klok.h"
 #include "Relais.h"
 
 volatile uint32_t msTicks; /* counts 1ms timeTicks */
@@ -32,10 +32,12 @@ void Delay(uint32_t dlyTicks);
 /**************************************************************************//**
  * @brief SysTick_Handler
  * Interrupt Service Routine for system tick counter
- *****************************************************************************/
+ ****************************************************************************/
 void SysTick_Handler(void)
 {
   msTicks++;       /* increment counter necessary in Delay()*/
+  updateKlok();
+
 }
 
 /**************************************************************************//**
@@ -77,8 +79,10 @@ int main(void)
   }
    GPIO_PinModeSet(gpioPortC,0,gpioModePushPull,0);
 
+  setKlok(19,59,55);
+
   while(1) {
-	  Relais_bediening(0b11110000);
+	  /*Relais_bediening(0b11110000);
 	  Delay(1000);
 	  Relais_bediening(0b01100111);
 	  Delay(1000);
@@ -86,6 +90,15 @@ int main(void)
 	  Delay(1000);
 	  Relais_bediening(0b00101010);
 	  Delay(1000);
+	  */
+
+	  Relais_bediening(getUren());
+	  Delay(250);
+	  Relais_bediening(getMinuten());
+	  Delay(250);
+	  Relais_bediening(getSeconden());
+	  Delay(250);
+	  Relais_bediening(0b00000000);
   }
 
 }
