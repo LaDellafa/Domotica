@@ -29,7 +29,6 @@ bool updateKlok()
 {
     if (msTeller == 999) {
         msTeller = 0;
-        printf("Update %d:%d:%d\n",uren,minuten,seconden);
         if(seconden == 59) {
             seconden = 0;
             if (minuten == 59) {
