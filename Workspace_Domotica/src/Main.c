@@ -75,8 +75,7 @@ int main(void)
    for(int i = 0; i < 7; i++) {
 	  GPIO_PinModeSet(gpioPortD,i,gpioModePushPull,0);
   }
-
-
+   GPIO_PinModeSet(gpioPortC,0,gpioModePushPull,0);
 
   while(1) {
 	  Relais_bediening(0b11110000);
