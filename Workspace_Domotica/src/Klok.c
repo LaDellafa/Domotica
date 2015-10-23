@@ -17,15 +17,14 @@
 int uren,minuten,seconden;
 int msTeller;
 
-bool initKlok() {
+void initKlok() {
     uren = 19;
     minuten = 20;
     seconden = 0;
     msTeller = 0;
-    return true;
 }
 
-bool updateKlok()
+void updateKlok()
 {
     if (msTeller == 999) {
         msTeller = 0;
@@ -47,7 +46,6 @@ bool updateKlok()
     } else {
         msTeller++;
     }
-    return true;
 }
 
 int getUren() {

@@ -9,8 +9,8 @@
 #define KLOK_H_
 #include <stdbool.h>
 
-bool initKlok();
-bool updateKlok();
+void initKlok();
+void updateKlok();
 int getUren();
 int getMinuten();
 int getSeconden();
