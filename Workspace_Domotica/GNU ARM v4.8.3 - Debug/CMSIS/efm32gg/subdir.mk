@@ -3,11 +3,11 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-C_SRCS += \
-../CMSIS/efm32gg/system_efm32gg.c 
-
 S_SRCS += \
 ../CMSIS/efm32gg/startup_gcc_efm32gg.s 
+
+C_SRCS += \
+../CMSIS/efm32gg/system_efm32gg.c 
 
 OBJS += \
 ./CMSIS/efm32gg/startup_gcc_efm32gg.o \

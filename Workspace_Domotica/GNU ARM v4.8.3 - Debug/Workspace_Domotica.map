@@ -652,16 +652,16 @@ OUTPUT(Workspace_Domotica.axf elf32-littlearm)
  .comment       0x0000000000000000       0x71 ./CMSIS/efm32gg/system_efm32gg.o
  .comment       0x0000000000000000       0x71 ./BSP/bsp_trace.o
 
-.debug_info     0x0000000000000000     0x3815
+.debug_info     0x0000000000000000     0x381f
  .debug_info    0x0000000000000000      0x142 ./src/Klok.o
  .debug_info    0x0000000000000142      0x8b1 ./src/Main.o
  .debug_info    0x00000000000009f3      0x37c ./src/Relais.o
  .debug_info    0x0000000000000d6f     0x11a5 ./emlib/em_cmu.o
  .debug_info    0x0000000000001f14      0x5a8 ./emlib/em_gpio.o
  .debug_info    0x00000000000024bc      0x245 ./emlib/em_system.o
- .debug_info    0x0000000000002701       0xcc ./CMSIS/efm32gg/startup_gcc_efm32gg.o
- .debug_info    0x00000000000027cd      0x561 ./CMSIS/efm32gg/system_efm32gg.o
- .debug_info    0x0000000000002d2e      0xae7 ./BSP/bsp_trace.o
+ .debug_info    0x0000000000002701       0xd6 ./CMSIS/efm32gg/startup_gcc_efm32gg.o
+ .debug_info    0x00000000000027d7      0x561 ./CMSIS/efm32gg/system_efm32gg.o
+ .debug_info    0x0000000000002d38      0xae7 ./BSP/bsp_trace.o
 
 .debug_abbrev   0x0000000000000000      0xc26
  .debug_abbrev  0x0000000000000000       0x7e ./src/Klok.o
@@ -725,21 +725,21 @@ OUTPUT(Workspace_Domotica.axf elf32-littlearm)
  .debug_line    0x000000000000143e      0x274 ./CMSIS/efm32gg/system_efm32gg.o
  .debug_line    0x00000000000016b2      0x208 ./BSP/bsp_trace.o
 
-.debug_str      0x0000000000000000     0x1a21
- .debug_str     0x0000000000000000      0x1de ./src/Klok.o
- .debug_str     0x00000000000001de      0x842 ./src/Main.o
-                                        0x9f1 (size before relaxing)
- .debug_str     0x0000000000000a20      0x107 ./src/Relais.o
-                                        0x350 (size before relaxing)
- .debug_str     0x0000000000000b27      0xa0f ./emlib/em_cmu.o
+.debug_str      0x0000000000000000     0x1a2b
+ .debug_str     0x0000000000000000      0x1e8 ./src/Klok.o
+ .debug_str     0x00000000000001e8      0x842 ./src/Main.o
+                                        0x9fb (size before relaxing)
+ .debug_str     0x0000000000000a2a      0x107 ./src/Relais.o
+                                        0x35a (size before relaxing)
+ .debug_str     0x0000000000000b31      0xa0f ./emlib/em_cmu.o
                                         0xe4c (size before relaxing)
- .debug_str     0x0000000000001536      0x16e ./emlib/em_gpio.o
+ .debug_str     0x0000000000001540      0x16e ./emlib/em_gpio.o
                                         0x5a4 (size before relaxing)
- .debug_str     0x00000000000016a4       0x7b ./emlib/em_system.o
-                                        0x2e9 (size before relaxing)
- .debug_str     0x000000000000171f      0x117 ./CMSIS/efm32gg/system_efm32gg.o
-                                        0x4c6 (size before relaxing)
- .debug_str     0x0000000000001836      0x1eb ./BSP/bsp_trace.o
+ .debug_str     0x00000000000016ae       0x7b ./emlib/em_system.o
+                                        0x2f3 (size before relaxing)
+ .debug_str     0x0000000000001729      0x117 ./CMSIS/efm32gg/system_efm32gg.o
+                                        0x4d0 (size before relaxing)
+ .debug_str     0x0000000000001840      0x1eb ./BSP/bsp_trace.o
                                         0x55f (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x96c
