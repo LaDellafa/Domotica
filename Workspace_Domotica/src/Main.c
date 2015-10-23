@@ -99,6 +99,7 @@ int main(void)
 	  Relais_bediening(getSeconden());
 	  Delay(250);
 	  Relais_bediening(0b00000000);
+	  Delay(250);
   }
 
 }
