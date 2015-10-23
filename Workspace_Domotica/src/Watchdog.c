@@ -5,4 +5,8 @@
  *      Author: landerdellafaille
  */
 
+int counterOfDeath;
 
+void initWatchdog() {
+	counterOfDeath = 30;
+}
