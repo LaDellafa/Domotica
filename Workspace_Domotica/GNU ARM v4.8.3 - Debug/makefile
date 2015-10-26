@@ -10,7 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include src/subdir.mk
 -include emlib/subdir.mk
--include CMSIS/efm32gg/subdir.mk
+-include CMSIS/efm32hg/subdir.mk
 -include BSP/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -32,7 +32,7 @@ all: Workspace_Domotica.axf
 Workspace_Domotica.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU ARM C Linker'
-	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "Workspace_Domotica.ld" -Xlinker --gc-sections -Xlinker -Map="Workspace_Domotica.map" --specs=nano.specs -o Workspace_Domotica.axf "./src/Klok.o" "./src/Main.o" "./src/Relais.o" "./src/Watchdog.o" "./emlib/em_cmu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./CMSIS/efm32gg/startup_gcc_efm32gg.o" "./CMSIS/efm32gg/system_efm32gg.o" "./BSP/bsp_bcc.o" "./BSP/bsp_stk.o" "./BSP/bsp_stk_leds.o" "./BSP/bsp_trace.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Workspace_Domotica.ld" -Xlinker --gc-sections -Xlinker -Map="Workspace_Domotica.map" --specs=nano.specs -o Workspace_Domotica.axf "./src/Klok.o" "./src/Main.o" "./src/Relais.o" "./src/Watchdog.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_lcd.o" "./emlib/em_system.o" "./CMSIS/efm32hg/startup_gcc_efm32hg.o" "./CMSIS/efm32hg/system_efm32hg.o" "./BSP/bsp_bcc.o" "./BSP/bsp_stk.o" "./BSP/bsp_stk_leds.o" "./BSP/bsp_trace.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -50,7 +50,7 @@ Workspace_Domotica.axf: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Workspace_Domotica.axf
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) Workspace_Domotica.axf
 	-@echo ' '
 
 .PHONY: all clean dependents

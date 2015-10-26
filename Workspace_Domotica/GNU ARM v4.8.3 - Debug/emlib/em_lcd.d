@@ -1,4 +1,5 @@
-src/Main.o: ../src/Main.c \
+emlib/em_lcd.o: ../emlib/em_lcd.c \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_lcd.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/em_device.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg322f64.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/arm_math.h \
@@ -42,20 +43,9 @@ src/Main.o: ../src/Main.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmareq.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmactrl.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_ports.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_pins.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_chip.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_cmu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_emu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/bspconfig.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_bcp.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_usart.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_trace.h \
- ../src/Klok.h ../src/Relais.h
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_pins.h
+
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_lcd.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/em_device.h:
 
@@ -144,31 +134,3 @@ src/Main.o: ../src/Main.c \
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_ports.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_pins.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_chip.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_cmu.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_emu.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/bspconfig.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_bcp.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_usart.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_trace.h:
-
-../src/Klok.h:
-
-../src/Relais.h:

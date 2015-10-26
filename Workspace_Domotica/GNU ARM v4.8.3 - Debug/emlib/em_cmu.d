@@ -1,59 +1,49 @@
-emlib/em_cmu.o: \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/src/em_cmu.c \
+emlib/em_cmu.o: ../emlib/em_cmu.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_cmu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/em_device.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg990f1024.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm3.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/em_device.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg322f64.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/arm_math.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm0plus.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cmInstr.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cmFunc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/system_efm32gg.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma_ch.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_aes.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_hc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_diep.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_doep.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_msc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_emu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_rmu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_cmu.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_st.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_buf.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_ch.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_rtc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_letimer.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_ebi.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usart.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_timer_cc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_timer.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_acmp.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_i2c.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_gpio_p.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_gpio.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_vcmp.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs_ch.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_leuart.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_pcnt.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_adc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dac.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lcd.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_burtc_ret.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_burtc.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_wdog.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_etm.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma_descriptor.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_devinfo.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_romtable.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_calibrate.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs_signals.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dmareq.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dmactrl.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_uart.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_af_ports.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_af_pins.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm0plus.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/system_efm32hg.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_aes.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma_ch.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb_diep.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb_doep.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_msc.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_emu.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_rmu.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_cmu.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_timer_cc.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_timer.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_acmp.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usart.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs_ch.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_idac.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_gpio_p.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_gpio.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_vcmp.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_adc.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_leuart.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_pcnt.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_i2c.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_rtc.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_wdog.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_mtb.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma_descriptor.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_devinfo.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_romtable.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_calibrate.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs_signals.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmareq.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmactrl.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_ports.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_pins.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h \
@@ -63,111 +53,93 @@ emlib/em_cmu.o: \
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_cmu.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/em_device.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/em_device.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg990f1024.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg322f64.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm3.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/arm_math.h:
+
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm0plus.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cmInstr.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cmFunc.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/system_efm32gg.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/CMSIS/Include/core_cm0plus.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma_ch.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/system_efm32hg.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_aes.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_aes.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma_ch.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_hc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_diep.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb_diep.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb_doep.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb_doep.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usb.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usb.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_msc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_msc.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_emu.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_emu.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_rmu.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_rmu.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_cmu.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_cmu.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_st.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_timer_cc.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_buf.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_timer.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense_ch.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_acmp.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lesense.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_usart.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_rtc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs_ch.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_letimer.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_ebi.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_idac.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_usart.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_gpio_p.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_timer_cc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_gpio.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_timer.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_vcmp.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_acmp.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_adc.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_i2c.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_leuart.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_gpio_p.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_pcnt.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_gpio.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_i2c.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_vcmp.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_rtc.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs_ch.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_wdog.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_mtb.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_leuart.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dma_descriptor.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_pcnt.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_devinfo.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_adc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_romtable.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dac.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_calibrate.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_lcd.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_prs_signals.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_burtc_ret.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmareq.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_burtc.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_dmactrl.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_wdog.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_ports.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_etm.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dma_descriptor.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_devinfo.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_romtable.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_calibrate.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_prs_signals.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dmareq.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_dmactrl.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_uart.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_af_ports.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32GG/Include/efm32gg_af_pins.h:
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/efm32hg_af_pins.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h:
 

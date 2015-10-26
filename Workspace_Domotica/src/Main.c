@@ -24,6 +24,7 @@
 #include "bsp_trace.h"
 #include "Klok.h"
 #include "Relais.h"
+//#include "segmentlcd.h"
 
 volatile uint32_t msTicks; /* counts 1ms timeTicks */
 
@@ -66,8 +67,10 @@ int main(void)
   //Enable de klok van GPIO
   CMU_ClockEnable(cmuClock_GPIO, true);
 
+  //SegmentLCD_Init(false);
+
   /* If first word of user data page is non-zero, enable eA Profiler trace */
-  BSP_TraceProfilerSetup();
+  //BSP_TraceProfilerSetup();
 
   /* Setup SysTick Timer for 1 msec interrupts  */
   if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000)) while (1) ;
@@ -80,18 +83,13 @@ int main(void)
    GPIO_PinModeSet(gpioPortC,0,gpioModePushPull,0);
 
   setKlok(19,59,55);
-
+  /*
+  SegmentLCD_AllOn();
+      Delay(500);
+  SegmentLCD_AllOff();
+*/
   while(1) {
-	  /*Relais_bediening(0b11110000);
-	  Delay(1000);
-	  Relais_bediening(0b01100111);
-	  Delay(1000);
-	  Relais_bediening(0b11001100);
-	  Delay(1000);
-	  Relais_bediening(0b00101010);
-	  Delay(1000);
-	  */
-
+	 // SegmentLCD_Number(1234);
 	  Relais_bediening(getUren());
 	  Delay(250);
 	  Relais_bediening(getMinuten());
