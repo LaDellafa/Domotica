@@ -47,7 +47,7 @@ void Delay(uint32_t dlyTicks);
 void SysTick_Handler(void)
 {
   msTicks++;       /* increment counter necessary in Delay()*/
-  //countDownWatchdog();
+  countDownWatchdog();
   updateKlok();
 
 }
@@ -151,7 +151,7 @@ int main(void)
   /* Chip errata */
   CHIP_Init();
 
-  //initWatchdog();
+  initWatchdog();
 
   /* Setup SysTick Timer for 1 msec interrupts  */
   if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000)) while (1) ;
@@ -199,9 +199,9 @@ int main(void)
 		  printString(tijdelijkeString,2,4);
 	  }
 
-	  //while(true){
-		  //countDownWatchdog();
-	  //}
+	  while(true){
+		  countDownWatchdog();
+	  }
 
 	  }
 
