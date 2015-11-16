@@ -40,6 +40,12 @@
 								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog.580824519" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.include.paths.1018560690" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/SLSTK3400A_EFM32HG/config&quot;"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/dmd/ssd2119"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/glib"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/dmd"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/glib"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/examples/clock"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/emlib/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/CMSIS/Include&quot;"/>
@@ -124,6 +130,14 @@
 								<option id="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog.1777142438" name="Generate debugger-friendly prologs (-mno-sched-prolog)" superClass="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.debug.prolog"/>
 								<option id="gnu.c.compiler.option.include.paths.1301649241" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/SLSTK3400A_EFM32HG/config&quot;"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/examples/textdisplay"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/dmd/ssd2119"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/dmd/display"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/dmd"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/glib"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile"/>
+									<listOptionValue builtIn="false" value="/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/emlib/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/CMSIS/Include&quot;"/>
@@ -185,5 +199,12 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="GNU ARM v4.8.3 - Release">
+			<resource resourceType="PROJECT" workspacePath="/Workspace_Domotica"/>
+		</configuration>
+		<configuration configurationName="GNU ARM v4.8.3 - Debug">
+			<resource resourceType="PROJECT" workspacePath="/Workspace_Domotica"/>
+		</configuration>
+	</storageModule>
 </cproject>

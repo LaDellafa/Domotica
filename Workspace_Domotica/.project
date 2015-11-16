@@ -45,10 +45,5 @@
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/kits/common/bsp/bsp_trace.c</locationURI>
 		</link>
-		<link>
-			<name>emlib/em_gpio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/emlib/src/em_gpio.c</locationURI>
-		</link>
 	</linkedResources>
 </projectDescription>
