@@ -29,6 +29,7 @@
 #include "Relais.h"
 #include "Displaymodule.h"
 #include "textdisplay.h"
+#include "Watchdog.h"
 //#include "segmentlcd.h"
 
 int statusRelais;
@@ -46,6 +47,7 @@ void Delay(uint32_t dlyTicks);
 void SysTick_Handler(void)
 {
   msTicks++;       /* increment counter necessary in Delay()*/
+  //countDownWatchdog();
   updateKlok();
 
 }
@@ -65,7 +67,7 @@ void Delay(uint32_t dlyTicks)
   while ((msTicks - curTicks) < dlyTicks) ;
 }
 
-// De GPIO-pinnen worden ge•nitialiseerd in deze functie
+// De GPIO-pinnen worden geï¿½nitialiseerd in deze functie
 static void gpioSetup(void)
 {
 	/* Zet GPIO-klok aan */
@@ -149,6 +151,8 @@ int main(void)
   /* Chip errata */
   CHIP_Init();
 
+  //initWatchdog();
+
   /* Setup SysTick Timer for 1 msec interrupts  */
   if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000)) while (1) ;
 
@@ -160,6 +164,7 @@ int main(void)
   status = 0b10101010; // Stel een variable in om de status te testen
 
   while(1) {
+	  //initWatchdog();
 	  // Wanneer ons display op KLOK staat, de klok laten zien.
 	  if (getDisplayMode() == KLOK) {
 		  /*
@@ -194,7 +199,12 @@ int main(void)
 		  printString(tijdelijkeString,2,4);
 	  }
 
+	  //while(true){
+		  //countDownWatchdog();
+	  //}
+
+	  }
+
   }
 
-}
 

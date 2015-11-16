@@ -55,19 +55,11 @@ src/Main.o: ../src/Main.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_bcp.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_usart.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/bsp/bsp_trace.h \
- ../src/Klok.h ../src/Relais.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/display.h \
+ ../src/Klok.h ../src/Relais.h ../src/Displaymodule.h \
+ /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/textdisplay.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/emstatus.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/em_types.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/displayconfigall.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displaypalconfig.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayconfig.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayconfigapp.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayls013b7dh03config.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/displayls013b7dh03.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayls013b7dh03config.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/textdisplay.h \
- /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/retargettextdisplay.h
+ ../src/Watchdog.h
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32HG/Include/em_device.h:
 
@@ -185,26 +177,12 @@ src/Main.o: ../src/Main.c \
 
 ../src/Relais.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/display.h:
+../src/Displaymodule.h:
+
+/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/textdisplay.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/emstatus.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/reptile/glib/em_types.h:
 
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/displayconfigall.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displaypalconfig.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayconfig.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayconfigapp.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayls013b7dh03config.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/displayls013b7dh03.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/SLSTK3400A_EFM32HG/config/displayls013b7dh03config.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/textdisplay.h:
-
-/Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/kits/common/drivers/retargettextdisplay.h:
+../src/Watchdog.h:
