@@ -19,5 +19,4 @@ emlib \
 Graphics \
 Drivers \
 CMSIS/efm32hg \
-BSP \
 

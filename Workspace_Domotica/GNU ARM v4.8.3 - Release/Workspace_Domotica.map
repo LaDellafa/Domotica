@@ -89,7 +89,7 @@ statusRelais        0x4               ./src/Main.o
 dirtyRows           0x10              ./Graphics/dmd_display.o
 SystemCoreClock     0x4               ./CMSIS/efm32hg/system_efm32hg.o
 uren                0x4               ./src/Klok.o
-counterOfDeath      0x4               ./src/Watchdog.o
+programmaties       0x130             ./src/Programmatie.o
 msTeller            0x4               ./src/Klok.o
 minuten             0x4               ./src/Klok.o
 msTicks             0x4               ./src/Main.o
@@ -119,6 +119,38 @@ Discarded input sections
  .text.Delay    0x0000000000000000       0x14 ./src/Main.o
  .text.GPIO_Unified_IRQ
                 0x0000000000000000       0x38 ./src/Main.o
+ .text          0x0000000000000000        0x0 ./src/Programmatie.o
+ .data          0x0000000000000000        0x0 ./src/Programmatie.o
+ .bss           0x0000000000000000        0x0 ./src/Programmatie.o
+ .text.initProgrammatie
+                0x0000000000000000       0x20 ./src/Programmatie.o
+ .text.checkProgrammatie
+                0x0000000000000000       0x4c ./src/Programmatie.o
+ .text.nieuweProgrammatie
+                0x0000000000000000       0x1c ./src/Programmatie.o
+ .text.bewerkProgrammatie
+                0x0000000000000000       0x38 ./src/Programmatie.o
+ .text.addPointerArray
+                0x0000000000000000       0x10 ./src/Programmatie.o
+ .text.getElementArray
+                0x0000000000000000        0xc ./src/Programmatie.o
+ .text.setProgrammatie
+                0x0000000000000000        0x8 ./src/Programmatie.o
+ .bss.elementArray
+                0x0000000000000000        0x4 ./src/Programmatie.o
+ .debug_info    0x0000000000000000      0x368 ./src/Programmatie.o
+ .debug_abbrev  0x0000000000000000      0x1f2 ./src/Programmatie.o
+ .debug_loc     0x0000000000000000      0x12c ./src/Programmatie.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./src/Programmatie.o
+ .debug_ranges  0x0000000000000000       0x40 ./src/Programmatie.o
+ .debug_line    0x0000000000000000       0xfb ./src/Programmatie.o
+ .debug_str     0x0000000000000000      0x2c6 ./src/Programmatie.o
+ .comment       0x0000000000000000       0x71 ./src/Programmatie.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./src/Programmatie.o
+ .debug_frame   0x0000000000000000       0xac ./src/Programmatie.o
+ COMMON         0x0000000000000000      0x130 ./src/Programmatie.o
  .text          0x0000000000000000        0x0 ./src/Relais.o
  .data          0x0000000000000000        0x0 ./src/Relais.o
  .bss           0x0000000000000000        0x0 ./src/Relais.o
@@ -136,28 +168,6 @@ Discarded input sections
  .ARM.attributes
                 0x0000000000000000       0x32 ./src/Relais.o
  .debug_frame   0x0000000000000000       0x20 ./src/Relais.o
- .text          0x0000000000000000        0x0 ./src/Watchdog.o
- .data          0x0000000000000000        0x0 ./src/Watchdog.o
- .bss           0x0000000000000000        0x0 ./src/Watchdog.o
- .text.initWatchdog
-                0x0000000000000000       0x10 ./src/Watchdog.o
- .text.countDownWatchdog
-                0x0000000000000000       0x2c ./src/Watchdog.o
- .rodata.str1.4
-                0x0000000000000000       0x10 ./src/Watchdog.o
- .debug_info    0x0000000000000000      0x132 ./src/Watchdog.o
- .debug_abbrev  0x0000000000000000       0xdb ./src/Watchdog.o
- .debug_loc     0x0000000000000000       0x20 ./src/Watchdog.o
- .debug_aranges
-                0x0000000000000000       0x28 ./src/Watchdog.o
- .debug_ranges  0x0000000000000000       0x18 ./src/Watchdog.o
- .debug_line    0x0000000000000000       0x77 ./src/Watchdog.o
- .debug_str     0x0000000000000000      0x22f ./src/Watchdog.o
- .comment       0x0000000000000000       0x71 ./src/Watchdog.o
- .ARM.attributes
-                0x0000000000000000       0x32 ./src/Watchdog.o
- .debug_frame   0x0000000000000000       0x38 ./src/Watchdog.o
- COMMON         0x0000000000000000        0x4 ./src/Watchdog.o
  .text          0x0000000000000000        0x0 ./emlib/em_assert.o
  .data          0x0000000000000000        0x0 ./emlib/em_assert.o
  .bss           0x0000000000000000        0x0 ./emlib/em_assert.o
@@ -361,6 +371,29 @@ Discarded input sections
                 0x0000000000000000        0xc ./emlib/em_usart.o
  .text.USART_TxExt
                 0x0000000000000000        0xc ./emlib/em_usart.o
+ .text          0x0000000000000000        0x0 ./emlib/em_wdog.o
+ .data          0x0000000000000000        0x0 ./emlib/em_wdog.o
+ .bss           0x0000000000000000        0x0 ./emlib/em_wdog.o
+ .text.WDOG_Enable
+                0x0000000000000000       0x20 ./emlib/em_wdog.o
+ .text.WDOG_Feed
+                0x0000000000000000       0x24 ./emlib/em_wdog.o
+ .text.WDOG_Init
+                0x0000000000000000       0x80 ./emlib/em_wdog.o
+ .text.WDOG_Lock
+                0x0000000000000000       0x1c ./emlib/em_wdog.o
+ .debug_info    0x0000000000000000      0x3ec ./emlib/em_wdog.o
+ .debug_abbrev  0x0000000000000000      0x1c0 ./emlib/em_wdog.o
+ .debug_loc     0x0000000000000000      0x12a ./emlib/em_wdog.o
+ .debug_aranges
+                0x0000000000000000       0x38 ./emlib/em_wdog.o
+ .debug_ranges  0x0000000000000000       0x40 ./emlib/em_wdog.o
+ .debug_line    0x0000000000000000      0x22a ./emlib/em_wdog.o
+ .debug_str     0x0000000000000000      0x40e ./emlib/em_wdog.o
+ .comment       0x0000000000000000       0x71 ./emlib/em_wdog.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./emlib/em_wdog.o
+ .debug_frame   0x0000000000000000       0x5c ./emlib/em_wdog.o
  .text          0x0000000000000000        0x0 ./Graphics/dmd_display.o
  .data          0x0000000000000000        0x0 ./Graphics/dmd_display.o
  .bss           0x0000000000000000        0x0 ./Graphics/dmd_display.o
@@ -544,106 +577,6 @@ Discarded input sections
                 0x0000000000000000       0xc8 ./CMSIS/efm32hg/system_efm32hg.o
  .text.SystemLFXOClockSet
                 0x0000000000000000       0xc8 ./CMSIS/efm32hg/system_efm32hg.o
- .text          0x0000000000000000        0x0 ./BSP/bsp_bcc.o
- .data          0x0000000000000000        0x0 ./BSP/bsp_bcc.o
- .bss           0x0000000000000000        0x0 ./BSP/bsp_bcc.o
- .text.BSP_BccDeInit
-                0x0000000000000000       0x60 ./BSP/bsp_bcc.o
- .text.BSP_BccInit
-                0x0000000000000000       0x90 ./BSP/bsp_bcc.o
- .text.BSP_BccPacketReceive
-                0x0000000000000000       0xac ./BSP/bsp_bcc.o
- .text.BSP_BccPacketSend
-                0x0000000000000000       0x80 ./BSP/bsp_bcc.o
- .text.BSP_BccPinsEnable
-                0x0000000000000000       0x70 ./BSP/bsp_bcc.o
- .rodata        0x0000000000000000       0x18 ./BSP/bsp_bcc.o
- .bss.rxByteCount
-                0x0000000000000000        0x4 ./BSP/bsp_bcc.o
- .bss.txByteCount
-                0x0000000000000000        0x4 ./BSP/bsp_bcc.o
- .debug_info    0x0000000000000000      0xbd5 ./BSP/bsp_bcc.o
- .debug_abbrev  0x0000000000000000      0x24f ./BSP/bsp_bcc.o
- .debug_loc     0x0000000000000000      0x328 ./BSP/bsp_bcc.o
- .debug_aranges
-                0x0000000000000000       0x40 ./BSP/bsp_bcc.o
- .debug_ranges  0x0000000000000000       0xa8 ./BSP/bsp_bcc.o
- .debug_line    0x0000000000000000      0x2f8 ./BSP/bsp_bcc.o
- .debug_str     0x0000000000000000      0x9a2 ./BSP/bsp_bcc.o
- .comment       0x0000000000000000       0x71 ./BSP/bsp_bcc.o
- .ARM.attributes
-                0x0000000000000000       0x32 ./BSP/bsp_bcc.o
- .debug_frame   0x0000000000000000       0x9c ./BSP/bsp_bcc.o
- .text          0x0000000000000000        0x0 ./BSP/bsp_stk.o
- .data          0x0000000000000000        0x0 ./BSP/bsp_stk.o
- .bss           0x0000000000000000        0x0 ./BSP/bsp_stk.o
- .text.BSP_Disable
-                0x0000000000000000        0xc ./BSP/bsp_stk.o
- .text.BSP_EbiInit
-                0x0000000000000000        0x8 ./BSP/bsp_stk.o
- .text.BSP_EbiDeInit
-                0x0000000000000000        0x8 ./BSP/bsp_stk.o
- .text.BSP_Init
-                0x0000000000000000       0x10 ./BSP/bsp_stk.o
- .text.BSP_CurrentGet
-                0x0000000000000000       0x2c ./BSP/bsp_stk.o
- .text.BSP_VoltageGet
-                0x0000000000000000       0x2c ./BSP/bsp_stk.o
- .debug_info    0x0000000000000000      0x2c5 ./BSP/bsp_stk.o
- .debug_abbrev  0x0000000000000000      0x165 ./BSP/bsp_stk.o
- .debug_loc     0x0000000000000000       0xbb ./BSP/bsp_stk.o
- .debug_aranges
-                0x0000000000000000       0x48 ./BSP/bsp_stk.o
- .debug_ranges  0x0000000000000000       0x38 ./BSP/bsp_stk.o
- .debug_line    0x0000000000000000      0x16f ./BSP/bsp_stk.o
- .debug_str     0x0000000000000000      0x2a4 ./BSP/bsp_stk.o
- .comment       0x0000000000000000       0x71 ./BSP/bsp_stk.o
- .ARM.attributes
-                0x0000000000000000       0x32 ./BSP/bsp_stk.o
- .debug_frame   0x0000000000000000       0x98 ./BSP/bsp_stk.o
- .text          0x0000000000000000        0x0 ./BSP/bsp_stk_leds.o
- .data          0x0000000000000000        0x0 ./BSP/bsp_stk_leds.o
- .bss           0x0000000000000000        0x0 ./BSP/bsp_stk_leds.o
- .text.BSP_LedsInit
-                0x0000000000000000       0x38 ./BSP/bsp_stk_leds.o
- .text.BSP_LedsGet
-                0x0000000000000000       0x1c ./BSP/bsp_stk_leds.o
- .text.BSP_LedsSet
-                0x0000000000000000       0x38 ./BSP/bsp_stk_leds.o
- .text.BSP_LedClear
-                0x0000000000000000       0x34 ./BSP/bsp_stk_leds.o
- .text.BSP_LedGet
-                0x0000000000000000       0x34 ./BSP/bsp_stk_leds.o
- .text.BSP_LedSet
-                0x0000000000000000       0x34 ./BSP/bsp_stk_leds.o
- .text.BSP_LedToggle
-                0x0000000000000000       0x34 ./BSP/bsp_stk_leds.o
- .rodata.ledArray
-                0x0000000000000000       0x10 ./BSP/bsp_stk_leds.o
- .debug_info    0x0000000000000000      0x8b7 ./BSP/bsp_stk_leds.o
- .debug_abbrev  0x0000000000000000      0x24f ./BSP/bsp_stk_leds.o
- .debug_loc     0x0000000000000000      0x524 ./BSP/bsp_stk_leds.o
- .debug_aranges
-                0x0000000000000000       0x50 ./BSP/bsp_stk_leds.o
- .debug_ranges  0x0000000000000000       0xd8 ./BSP/bsp_stk_leds.o
- .debug_line    0x0000000000000000      0x2fa ./BSP/bsp_stk_leds.o
- .debug_str     0x0000000000000000      0x6e9 ./BSP/bsp_stk_leds.o
- .comment       0x0000000000000000       0x71 ./BSP/bsp_stk_leds.o
- .ARM.attributes
-                0x0000000000000000       0x32 ./BSP/bsp_stk_leds.o
- .debug_frame   0x0000000000000000       0x88 ./BSP/bsp_stk_leds.o
- .text          0x0000000000000000        0x0 ./BSP/bsp_trace.o
- .data          0x0000000000000000        0x0 ./BSP/bsp_trace.o
- .bss           0x0000000000000000        0x0 ./BSP/bsp_trace.o
- .debug_info    0x0000000000000000       0x8a ./BSP/bsp_trace.o
- .debug_abbrev  0x0000000000000000       0x24 ./BSP/bsp_trace.o
- .debug_aranges
-                0x0000000000000000       0x18 ./BSP/bsp_trace.o
- .debug_line    0x0000000000000000       0x1d ./BSP/bsp_trace.o
- .debug_str     0x0000000000000000      0x1bd ./BSP/bsp_trace.o
- .comment       0x0000000000000000       0x71 ./BSP/bsp_trace.o
- .ARM.attributes
-                0x0000000000000000       0x32 ./BSP/bsp_trace.o
  .data          0x0000000000000000        0x0 /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
  .bss           0x0000000000000000        0x0 /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
  .text          0x0000000000000000       0xc0 /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_divsi3.o)
@@ -848,8 +781,8 @@ LOAD /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/b
 LOAD ./src/Displaymodule.o
 LOAD ./src/Klok.o
 LOAD ./src/Main.o
+LOAD ./src/Programmatie.o
 LOAD ./src/Relais.o
-LOAD ./src/Watchdog.o
 LOAD ./emlib/em_assert.o
 LOAD ./emlib/em_cmu.o
 LOAD ./emlib/em_ebi.o
@@ -861,6 +794,7 @@ LOAD ./emlib/em_prs.o
 LOAD ./emlib/em_rtc.o
 LOAD ./emlib/em_system.o
 LOAD ./emlib/em_usart.o
+LOAD ./emlib/em_wdog.o
 LOAD ./Graphics/dmd_display.o
 LOAD ./Graphics/glib.o
 LOAD ./Graphics/glib_bitmap.o
@@ -880,10 +814,6 @@ LOAD ./Drivers/textdisplay.o
 LOAD ./Drivers/udelay.o
 LOAD ./CMSIS/efm32hg/startup_gcc_efm32hg.o
 LOAD ./CMSIS/efm32hg/system_efm32hg.o
-LOAD ./BSP/bsp_bcc.o
-LOAD ./BSP/bsp_stk.o
-LOAD ./BSP/bsp_stk_leds.o
-LOAD ./BSP/bsp_trace.o
 START GROUP
 LOAD /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a
 LOAD /Applications/SimplicityStudio_v3/developer/toolchains/gnu_arm/4.8_2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a

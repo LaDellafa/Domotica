@@ -29,16 +29,29 @@
 #include "Relais.h"
 #include "Displaymodule.h"
 #include "textdisplay.h"
-#include "Watchdog.h"
-//#include "segmentlcd.h"
+#include "em_wdog.h"
 
-int statusRelais;
+
+int statusRelais,i;
 volatile int status;
 bool updateScherm = true;
 
 volatile uint32_t msTicks; /* counts 1ms timeTicks */
 
 void Delay(uint32_t dlyTicks);
+
+WDOG_Init_TypeDef init =
+	{
+	  .enable     = true,               /* Start watchdog when init done */
+	  .debugRun   = false,              /* WDOG not counting during debug halt */
+	  .em2Run     = true,               /* WDOG counting when in EM2 */
+	  .em3Run     = true,               /* WDOG counting when in EM3 */
+	  .em4Block   = false,              /* EM4 can be entered */
+	  .swoscBlock = false,              /* Do not block disabling LFRCO/LFXO in CMU */
+	  .lock       = false,              /* Do not lock WDOG configuration (if locked, reset needed to unlock) */
+	  .clkSel     = wdogClkSelULFRCO,   /* Select 1kHZ WDOG oscillator */
+	  .perSel     = wdogPeriod_2k,      /* Set the watchdog period to 2049 clock periods (ie ~2 seconds)*/
+	};
 
 /**************************************************************************//**
  * @brief SysTick_Handler
@@ -47,7 +60,6 @@ void Delay(uint32_t dlyTicks);
 void SysTick_Handler(void)
 {
   msTicks++;       /* increment counter necessary in Delay()*/
-  countDownWatchdog();
   updateKlok();
 
 }
@@ -151,8 +163,6 @@ int main(void)
   /* Chip errata */
   CHIP_Init();
 
-  initWatchdog();
-
   /* Setup SysTick Timer for 1 msec interrupts  */
   if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000)) while (1) ;
 
@@ -164,7 +174,9 @@ int main(void)
   status = 0b10101010; // Stel een variable in om de status te testen
 
   while(1) {
-	  //initWatchdog();
+	  /* Initializing watchdog with choosen settings */
+	  WDOG_Init(&init);
+
 	  // Wanneer ons display op KLOK staat, de klok laten zien.
 	  if (getDisplayMode() == KLOK) {
 		  /*
@@ -199,9 +211,24 @@ int main(void)
 		  printString(tijdelijkeString,2,4);
 	  }
 
-	  while(true){
-		  countDownWatchdog();
-	  }
+
+	  /* Do something for a while and make sure that the watchdog does not time out */
+	  /*clearDisplay();
+	  printString("FEED",2,8);
+	  for (i = 0; i < 10; i++)
+	  {
+	    Delay(1000);
+	    WDOG_Feed();
+	  }*/
+
+	  /* Stop feeding the watchdog, and it will trigger a reset */
+	  /*clearDisplay();
+	  printString("WAIT",2,8);*/
+
+	  /* Enter loop, and wait for wdog reset */
+	  /*while (1);*/
+
+	  WDOG_Feed();
 
 	  }
 
